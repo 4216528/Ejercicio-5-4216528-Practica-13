@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Ejercicio_5.MainPage">
+
+    <!-- Creamos una nueva aplicacion con 3 botones y con la propiedad Style aplicamos el estilo a los mismos -->
+    
+    <StackLayout VerticalOptions="Center" 
+                 
+    HorizontalOptions="Center">
+        
+        <StackLayout.Resources>
+            
+            <ResourceDictionary>
+                
+                <Style x:Key="EstiloBoton" TargetType="Button">
+                    
+                    <Setter Property="FontSize" Value="22" />
+                    
+                    <Setter Property="Margin" Value="10" />
+                    
+                </Style>
+                
+            </ResourceDictionary>
+            
+        </StackLayout.Resources>
+        
+        <Button Text="Botón 1" 
+                
+        Style="{StaticResource EstiloBoton}" />
+        
+        <Button Text="Botón 2" 
+                
+        Style="{StaticResource EstiloBoton}" />
+        
+        <Button Text="Botón 3" 
+                
+        Style="{StaticResource EstiloBoton}" />
+        
+    </StackLayout>
+
+</ContentPage>
